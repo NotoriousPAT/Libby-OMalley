@@ -1,7 +1,7 @@
-{{
-  "name": "Libby O'Malley home page",
+{
+  "name": "Libby-OMalley",
   "version": "1.0.0",
-  "description": "Personal website",
+  "description": "Personal web page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,8 +38,6 @@
     "url": "Libby-OMalley"
   },
   "keywords": [
-    "Libby",
-    "O'Malley'",
-
+    "Libby"
   ]
 }
