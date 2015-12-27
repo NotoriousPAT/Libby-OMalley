@@ -11,6 +11,7 @@ var rename = require('gulp-rename');
 var del = require('del');
 var concat = require('gulp-concat');
 var watch = require('gulp-watch');
+var wiredep = require('wiredep').stream;
 
 // Common patterns used throughout the gulp configuration
 var src = {
@@ -78,6 +79,7 @@ gulp.task('deploy', function() {
 // Adding the CSS task
 gulp.task('scss', function () {
   return gulp.src('./src/css/main.scss')
+  .pipe(wiredep())
     .pipe(sass().on('error', sass.logError))
     .pipe(rename('main.css'))
     .pipe(autoprefixer({
@@ -123,6 +125,11 @@ gulp.task('font', function () {
   return gulp.src(src.allFont)
     .pipe(gulp.dest('./dist'));
 });
+
+
+
+
+
 
 // Clean the destination directory
 gulp.task('clean', function (cb) {
