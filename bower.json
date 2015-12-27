@@ -20,6 +20,13 @@
     "jquery": "~2.1.4",
     "backbone": "~1.2.0",
     "underscore": "~1.8.3",
-    "font-awesome": "fontawesome#~4.5.0"
-  }
+    "font-awesome": "~4.2.0"
+  },
+  "overrides": {
+    "font-awesome": {
+     "main": [
+       "./scss/font-awesome.scss",
+       "./fonts/*"
+     ]
+   },
 }
