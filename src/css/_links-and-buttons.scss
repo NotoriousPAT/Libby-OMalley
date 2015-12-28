@@ -19,5 +19,14 @@ padding: 1em;
 
 .icon-download{
   color: $white;
-  
+
+}
+
+.icon-download:hover{
+  color: $green;
+
+}
+.icon-download:active{
+  color: $white;
+
 }
