@@ -2,8 +2,13 @@
   padding-left: 0;
   padding-right: 0;
   font-family:"open sans";
-
+text-decoration: none;
+margin-left: 0;
+margin-right: 0;
   // font-family:"roboto slab";
+  @media(min-width: 600px){
+    font-size: 1.25em;
+  }
 }
 header{
 
@@ -87,6 +92,9 @@ ul{
 }
 
 .headshot{
+// border: solid white thick;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   @media (min-width: 375px){
     max-height: 425px;
     margin: 0 auto;
@@ -103,7 +111,7 @@ ul{
 
 #row2{
   position: relative;
-  height: 10em;
+  height: 12em;
   background-color: $pink;
   padding: 1em;
   z-index: 100;
@@ -117,6 +125,9 @@ ul{
     position: absolute;
     right: 0;
     z-index: -1;
+    @media(min-width: 600px){
+      height: 12em;
+    }
   }
 
   &:before {
@@ -147,7 +158,10 @@ position: absolute;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-
+  @media(min-width: 600px){
+    font-size: 1.25em;
+    padding:0 2em;
+  }
 
 
   // color: $text;
@@ -180,9 +194,9 @@ position: absolute;
 .ribbon{
   z-index: -1000;
   position: relative;
-  // width: 100%;
 
-  height:107em;
+
+  height:110em;
   margin: 0 auto;
   margin-top: -10em;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -190,6 +204,14 @@ position: absolute;
   background-color: green;
 padding-top: 8em;
   // opacity: .5;
+  @media(min-width: 375px){
+
+  }
+  @media (min-width: 600px){
+    height:115em;
+    margin-top: -8em;
+  }
+
 }
 
 
@@ -227,14 +249,11 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19),  0 6px 6px rgba(0,0,0,0.23);
   border: solid $green thick;
   background-color: $green;
 margin-bottom: 2em ;
-
-}
-// p{
-//   color: white;
-//   // background-color: $gray;
-//   // padding: 2em;
-//   padding: 1.25em;
+// @media (min-width: 600px){
+//   width: 90%;
 // }
+}
+
 
 
 
@@ -251,6 +270,12 @@ margin-bottom: 2em ;
 border: solid white thick;
 // margin-left: -2em;
 // margin-top: 2em;
+@media (min-width: 600px){
+  width: 12em;
+}
+
+
+
 }
 
 
@@ -271,7 +296,9 @@ margin: .5em;
   -moz-box-shadow:0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 -webkit-box-shadow:0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-
+// @media (min-width: 600px){
+//   width: 70%;
+// }
 }
 
 .history{
@@ -285,31 +312,24 @@ margin: .5em;
   // margin: 1em 2em -1em 1em;
   // background-color: #56514e;
   // padding: 2em;
-//
+  @media(min-width: 600px){
+    font-size: 1.25em;
+  }
+
 }
 
 
-// .download{
-// text-decoration: none;
-// margin:0 auto;
-// margin-top: 5em;
-//
-// }
-
-// .icon-download{
-//   color: $white;
-// font-size: 2em;
-// height: 1em;
-// }
 
 
-#download,
+
 .button{
+
+  position:relative;
   display: block;
   width: 5em;
 margin: 0 auto;
   font-size: 2em;
-  border:white solid medium;
+border: solid white thick;
   border-radius: 0;
   padding: .25em;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), inset 0 19px 38px rgba(0,0,0,0.30), inset 0 15px 12px rgba(0,0,0,0.22);
@@ -320,16 +340,8 @@ margin: 0 auto;
 }
 
 
-#download:hover{
 
 
-background-color: $pink;
-
-}
-
-.button:active{
-background-color: red;
-}
 
 #row5{
   position: relative;
@@ -344,7 +356,10 @@ z-index: 100;
 
 
 box-shadow: 0 -19px 38px rgba(0,0,0,0.30), 0 -15px 12px rgba(0,0,0,0.22);
-
+transform: translate(0%, -15%);
+@media(min-width: 600px){
+  height: 48em;
+}
 
 &:before,
   &:after {
@@ -406,13 +421,18 @@ line-height: 1.5em;
 padding-bottom: 2em;
 // padding-top: 1em;
 
-
+@media(min-width: 600px){
+  font-size: 1.5em;
+}
 
 
 }
 
 form{
 text-decoration: none;
+@media(min-width: 600px){
+  font-size: 1.5em;
+}
 }
 
 .input-field{
@@ -426,7 +446,9 @@ padding: .5em;
 // margin: 0 auto;
 margin-bottom: 1em;
 font-size: 1em;
-
+// @media(min-width: 600px){
+//   font-size: 1.25em;
+// }
 }
 
 
@@ -462,9 +484,9 @@ font-size: 1.5em;
   background-color: $pink-darkest;
 }
 
-.ribbon-bottom{
-  height: 40em;
-}
+// .ribbon-bottom{
+//   height: 40em;
+// }
 
 .quotes{
   // display: inline-block;
@@ -472,16 +494,50 @@ font-size: 1.5em;
   border: solid white thick;
 position: relative;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  opacity: 0.6;
-    -webkit-opacity:0.6;
-
+  // opacity: 0.6;
+  //   -webkit-opacity:0.6;
+// margin: 1em;
+float: left;
   // margin: 1.5em 0 .5em 0em;
 
   width: 12em;
   height: 12em;
   border-radius: 50%;
+@media (min-width: 600px){
+  width: 14em;
+  height: 14em;
+    border-width: .5em;
+}
 }
 
+.quotes:nth-child(1){
+  @media (min-width: 600px){
+
+
+    // margin-top: 6em;
+  }
+
+}
+
+.quotes:nth-child(2){
+  float: right;
+  @media (min-width: 600px){
+    margin-top: -1em;
+
+  }
+}
+.quotes:nth-child(3){
+  margin-bottom: 4em;
+@media (min-width: 375px){
+  margin-bottom: 2em;
+}
+  @media (min-width: 600px){
+
+// margin-top: 1em;
+  // margni: 0 auto;
+  margin-bottom: 7em;
+  }
+}
 .quote-text{
   color: white;
   // padding: .5em;
@@ -506,6 +562,7 @@ padding: .5em;
 
 
 #row6{
+
   position: relative;
   background-color:$pink;
 
@@ -518,7 +575,10 @@ z-index: 100;
 
 
 box-shadow: 0 -19px 38px rgba(0,0,0,0.30), 0 -15px 12px rgba(0,0,0,0.22);
+@media(min-width: 600px){
+  height: 24em;
 
+}
 
 &:before {
     background: inherit;
@@ -565,23 +625,34 @@ box-shadow: 0 -19px 38px rgba(0,0,0,0.30), 0 -15px 12px rgba(0,0,0,0.22);
 
   color: white;
   font-weight: bold;
-  font-size: 1.25em;
-line-height: 1.5em;
+  font-size: 1.1em;
+line-height: 1.75em;
+@media(min-width: 600px){
+  font-size: 1.5em;
+
+}
 }
 
 .bottom-links:hover{
-  color:$text;
-  // text-decoration:none;
+  color:$gray-light;
+  text-decoration: none;
 }
 
+.bottom-links:active{
+  color:$gray;
+  text-decoration: none;
+}
 
-
+.bottom-links:visited{
+  color:$gray-light;
+  text-decoration: none;
+}
 
 
 
 .location{
 
-padding-top: 1em;
+padding-top: 2em;
   margin: 0 auto;
 
     width:60%;
@@ -595,4 +666,8 @@ padding-top: 1em;
 padding-bottom: 1em;
   // display: inline-block;
   text-align: center;
+  @media(min-width: 600px){
+    font-size: 1.25em;
+    line-height: 2em;
+  }
 }

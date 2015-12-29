@@ -1,32 +1,99 @@
 .links{
   display: inline-block;
   // margin: 0 auto;
-  padding: .5em;
-  width: 3.5em;
-  height: 3.5em;
+  // padding: .5em;
+  width: 2.75em;
+  height: 2.75em;
+  margin:.5em .5em 8em .5em;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   border-radius: 50%;
   @media (min-width: 400px){
     width: 4em;
     height: 4em;
-
   }
   @media (min-width: 600px){
-    width: 6em;
-    height: 6em;
-padding: 1em;
+    // width: 6em;
+    // height: 6em;
+    // padding: 1em;
   }
 }
 
 
-.icon-download{
-  color: $white;
+
+
+
+
+.download-row{
+
+display: block;
+position: relative;
+text-decoration: none;
+margin: 0 auto;
+z-index: 2000;
+
+transform: translate(0%, -325%);
+@media(min-width: 375px){
+  transform: translate(0%, -425%);
+}
+@media(min-width: 600px){
+  // transform: translate(0%, -325%);
+  margin-bottom: 2em;
+}
 
 }
 
-.icon-download:hover{
-  color: $green;
+.download{
+  text-decoration: none;
 
 }
-.icon-download:active{
-  color: $white;
+#label{
+  z-index: 2000;
+  position: relative;
+  margin-top: 0;
+  color:white;
+  width: 5em;
+  font-size: 2em;
+  font-weight: bold;
+  border: solid white thick;
+  border-radius: 0;
+  padding: .25em;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), inset 0 19px 38px rgba(0,0,0,0.30), inset 0 15px 12px rgba(0,0,0,0.22);
+  margin: 0 auto;
+  text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  background-color: green;
+  text-decoration: none;
 
 }
+
+.download:hover,
+#label:hover{
+  text-decoration: none;
+  background-color: $green;
+}
+
+.download:active,
+#label:active{
+  text-decoration: none;
+  background-color: $green-dark;
+}
+
+.dowload:visited,
+#label:visited{
+  text-decoration: none !important;
+  background-color:purple;
+}
+
+
+
+
+// .download:hover{
+//   text-decoration: none;
+//   background-color: $green;
+// }
+// .download:active{
+//   text-decoration: none;
+// }
+// .download:visited{
+//   text-decoration: none;
+//     background-color:purple;
+// }
