@@ -113,7 +113,7 @@ $(function() {
 $(function() {
 
   var $window           = $(window),
-      win_height_padded = $window.height() * 1.1,
+      win_height_padded = $window.height() * 0.85,
       win_height_scrollUp= $window.height() *1.75,
       isTouch           = Modernizr.touch;
 
@@ -123,7 +123,7 @@ $(function() {
 
   function revealOnScroll() {
     var scrolled = $window.scrollTop(),
-        win_height_padded = $window.height() * 1.1;
+        win_height_padded = $window.height() * 0.85;
 
     // Showed...
 
