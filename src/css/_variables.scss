@@ -10,10 +10,21 @@ $box-shadow: rgba(50, 50, 50, 0.5);
 $box-shadow-dark:#606060;
 $white:#ffffff;
 
-
-$text:#737373;
-$off-white:#f2f0dc;
-// $off-white:#edf5e7;
+$text:#757c83;
 $gray:#7c8079;
 $gray-light:#b2b7ae;
 $gray-dark:#d0d3ce;
+
+
+
+
+
+
+
+
+// @mixin center{
+//   top: 50%;
+//   left: 50%;
+//   right: -50%;
+//   transform(tran)
+// }
